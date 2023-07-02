@@ -7,8 +7,11 @@ public class Main {
 
         int bonus = refill / 100;
 
-        if (refill >= 1000) ;
-        else bonus = 0;
+        if (refill >= 1000) {
+            ;
+        } else {
+            bonus = 0;
+        }
 
         System.out.println("Баланс клиента: " + (onAccount + refill + bonus));
 

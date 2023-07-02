@@ -3,17 +3,15 @@
 public class Main {
     public static void main(String[] args) {
         int onAccount = 500;
-        int refill = 2000;
+        int refill = 1000;
 
         int bonus = refill / 100;
 
         if (refill >= 1000) {
-            ;
+            System.out.println("Баланс клиента: " + (onAccount + refill + bonus));
         } else {
-            bonus = 0;
+            System.out.println("Баланс клиента: " + (onAccount + refill));
         }
-
-        System.out.println("Баланс клиента: " + (onAccount + refill + bonus));
-
     }
+
 }
